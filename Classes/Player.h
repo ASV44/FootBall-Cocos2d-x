@@ -22,7 +22,7 @@ public:
 private:
     int _team;
     int _gamePosition;
-    void setInitialPosition();
+    void setInitialPosition(Vec2 origin, Size visibleSize);
     void setInitialSize();
 };
 

@@ -29,18 +29,17 @@ bool MainScene::init()
 
     this->addChild(gameField, 0);
     
-    auto player = new Player(0,0);
-    //player->setScale(1.5);
-    
-    this->addChild(player, 1);
-    
+    redTeam = new Team(Team::RED_TEAM);
+    blueTeam = new Team(Team::BLUE_TEAM);
+    this->addChild(redTeam);
+    this->addChild(blueTeam);
 //    CCLOG("Origin x:%f y:%f",origin.x,origin.y);
 //    CCLOG("Visible Size x:%f y:%f", visibleSize.width, visibleSize.height);
 //    CCLOG("Player x:%f y:%f",player->getPosition().x,player->getPosition().y);
 //    CCLOG("Player width:%f height:%f",player->getContentSize().width, player->getContentSize().height);
-    float x = player->getContentSize().width / visibleSize.width;
-    float y = player->getContentSize().height / visibleSize.height;
-    CCLOG("Size ratio x:%f y:%f", x, y);
+//    float x = player->getContentSize().width / visibleSize.width;
+//    float y = player->getContentSize().height / visibleSize.height;
+//    CCLOG("Size ratio x:%f y:%f", x, y);
     
     this->scheduleUpdate();
     
@@ -48,5 +47,6 @@ bool MainScene::init()
 }
 
 void MainScene::update(float delta) {
-    
+//    static auto player = this->getChildByName("player");
+//    player->setPositionX(player->getPositionX() + 1);
 }

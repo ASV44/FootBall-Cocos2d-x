@@ -10,16 +10,22 @@
 
 Player::Player(int team, int gamePosition)
 {
+    auto visibleSize = Director::getInstance()->getVisibleSize();
+    Vec2 origin = Director::getInstance()->getVisibleOrigin();
+    
     _team = team;
     _gamePosition = gamePosition;
     
     switch (team) {
         case 0:
-            this->initWithFile("bluePlayer.png");
+            this->initWithFile("redPlayer.png");
+            setInitialPosition(origin, visibleSize);
             break;
         
         case 1:
-            this->initWithFile("redPlayer.png");
+            this->initWithFile("bluePlayer.png");
+            setInitialPosition(Vec2(visibleSize) + origin, Size(-visibleSize.width, -visibleSize.height));
+            this->setRotation(180);
             break;
             
         default:
@@ -27,20 +33,33 @@ Player::Player(int team, int gamePosition)
             break;
     }
     
-    setInitialPosition();
+    
     setInitialSize();
 //    this->setAnchorPoint(Vec2(0,0));
 }
 
-void Player::setInitialPosition()
+void Player::setInitialPosition(Vec2 origin, Size visibleSize)
 {
-    auto visibleSize = Director::getInstance()->getVisibleSize();
-    Vec2 origin = Director::getInstance()->getVisibleOrigin();
-    
     switch (_gamePosition) {
         case 0:
             this->setPosition(Vec2(origin.x + visibleSize.width / 4,
                                    origin.y + visibleSize.height / 2));
+            break;
+        case 1:
+            this->setPosition(Vec2(origin.x + visibleSize.width / 4,
+                                   origin.y + visibleSize.height / 4));
+            break;
+        case 2:
+            this->setPosition(Vec2(origin.x + visibleSize.width / 4,
+                                   origin.y + visibleSize.height * 0.75));
+            break;
+        case 3:
+            this->setPosition(Vec2(origin.x + visibleSize.width * 0.375,
+                                   origin.y + visibleSize.height * 0.625));
+            break;
+        case 4:
+            this->setPosition(Vec2(origin.x + visibleSize.width * 0.375,
+                                   origin.y + visibleSize.height * 0.375));
             break;
             
         default:

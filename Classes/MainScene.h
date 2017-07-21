@@ -17,8 +17,8 @@ public:
     CREATE_FUNC(MainScene);
 
 private:
-    cocos2d::Sprite **redTeam;
-    cocos2d::Sprite **blueTeam;
+    Team *redTeam;
+    Team *blueTeam;
 };
 
 #endif // __HELLOWORLD_SCENE_H__
