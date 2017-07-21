@@ -73,6 +73,8 @@
 		D60B80781F21E254004E65E5 /* redPlayer.png in Resources */ = {isa = PBXBuildFile; fileRef = D60B80741F21E254004E65E5 /* redPlayer.png */; };
 		D60B80791F21E254004E65E5 /* field.png in Resources */ = {isa = PBXBuildFile; fileRef = D60B80751F21E254004E65E5 /* field.png */; };
 		D6B0611B1803AB670077942B /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6B0611A1803AB670077942B /* CoreMotion.framework */; };
+		D6D9DA281F21F8AD00A73277 /* Player.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D6D9DA261F21F8AD00A73277 /* Player.cpp */; };
+		D6D9DA2B1F21F8E300A73277 /* Team.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D6D9DA2A1F21F8E300A73277 /* Team.cpp */; };
 		ED545A7C1B68A1F400C3958E /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = ED545A7B1B68A1F400C3958E /* libiconv.dylib */; };
 		ED545A7E1B68A1FA00C3958E /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = ED545A7D1B68A1FA00C3958E /* libiconv.dylib */; };
 /* End PBXBuildFile section */
@@ -180,6 +182,10 @@
 		D60B80741F21E254004E65E5 /* redPlayer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = redPlayer.png; sourceTree = "<group>"; };
 		D60B80751F21E254004E65E5 /* field.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = field.png; sourceTree = "<group>"; };
 		D6B0611A1803AB670077942B /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/CoreMotion.framework; sourceTree = DEVELOPER_DIR; };
+		D6D9DA241F21F89C00A73277 /* Player.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
+		D6D9DA261F21F8AD00A73277 /* Player.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Player.cpp; sourceTree = "<group>"; };
+		D6D9DA291F21F8CC00A73277 /* Team.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Team.h; sourceTree = "<group>"; };
+		D6D9DA2A1F21F8E300A73277 /* Team.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Team.cpp; sourceTree = "<group>"; };
 		ED545A7B1B68A1F400C3958E /* libiconv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.dylib; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.4.sdk/usr/lib/libiconv.dylib; sourceTree = DEVELOPER_DIR; };
 		ED545A7D1B68A1FA00C3958E /* libiconv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.dylib; path = usr/lib/libiconv.dylib; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -326,8 +332,12 @@
 			children = (
 				46880B8419C43A87006E1F66 /* AppDelegate.cpp */,
 				46880B8519C43A87006E1F66 /* AppDelegate.h */,
-				46880B8619C43A87006E1F66 /* MainScene.cpp */,
 				46880B8719C43A87006E1F66 /* MainScene.h */,
+				46880B8619C43A87006E1F66 /* MainScene.cpp */,
+				D6D9DA261F21F8AD00A73277 /* Player.cpp */,
+				D6D9DA241F21F89C00A73277 /* Player.h */,
+				D6D9DA2A1F21F8E300A73277 /* Team.cpp */,
+				D6D9DA291F21F8CC00A73277 /* Team.h */,
 			);
 			name = Classes;
 			path = ../Classes;
@@ -535,9 +545,11 @@
 			files = (
 				46880B8819C43A87006E1F66 /* AppDelegate.cpp in Sources */,
 				46880B8A19C43A87006E1F66 /* MainScene.cpp in Sources */,
+				D6D9DA281F21F8AD00A73277 /* Player.cpp in Sources */,
 				503AE10017EB989F00D1A890 /* AppController.mm in Sources */,
 				503AE10217EB989F00D1A890 /* RootViewController.mm in Sources */,
 				503AE10117EB989F00D1A890 /* main.m in Sources */,
+				D6D9DA2B1F21F8E300A73277 /* Team.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

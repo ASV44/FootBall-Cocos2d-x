@@ -2,6 +2,7 @@
 #define __HELLOWORLD_SCENE_H__
 
 #include "cocos2d.h"
+#include "Team.h"
 
 class MainScene : public cocos2d::Scene
 {
@@ -10,6 +11,7 @@ public:
 
     virtual bool init();
     
+    void update(float delta);
     
     // implement the "static create()" method manually
     CREATE_FUNC(MainScene);
