@@ -15,26 +15,57 @@ Player::Player(int team, int gamePosition)
     
     _team = team;
     _gamePosition = gamePosition;
+    selected = false;
+    
+    setInitialSize();
+    
+    selectionDot = DrawNode::create();
+    auto selectionDotPoint = Point(this->getContentSize().width / 2,
+                                this->getContentSize().height / 2);
     
     switch (team) {
         case 0:
             this->initWithFile("redPlayer.png");
             setInitialPosition(origin, visibleSize);
+            selectionDot->drawDot(selectionDotPoint, 20, Color4F(0.4117f, 0.00784f,0.0352f,0.3f));
             break;
         
         case 1:
             this->initWithFile("bluePlayer.png");
             setInitialPosition(Vec2(visibleSize) + origin, Size(-visibleSize.width, -visibleSize.height));
             this->setRotation(180);
+            selectionDot->drawDot(selectionDotPoint, 20, Color4F(0.098f,0.082f,0.349f,0.3f));
             break;
             
         default:
             this->initWithFile("referee.png");
             break;
     }
+
+    selectionDot->setVisible(false);
+    this->addChild(selectionDot, -1);
     
+    listener = EventListenerTouchOneByOne::create();
     
-    setInitialSize();
+    listener->onTouchBegan = [&](Touch* touch, Event* event){
+        auto touchPoint = touch->getLocation();
+        auto playerCoordinates = this->getBoundingBox();
+        
+        if(selected) {
+            this->resetSelection();
+        }
+        
+        if(playerCoordinates.containsPoint(touchPoint)) {
+            CCLOG("Select Player %d", _gamePosition);
+            this->selectPlayer();
+            return true;
+        }
+        
+        return false;
+    };
+    
+    _eventDispatcher->addEventListenerWithSceneGraphPriority(listener, this);
+    
 //    this->setAnchorPoint(Vec2(0,0));
 }
 
@@ -77,4 +108,21 @@ void Player::setInitialSize()
     float height = 0.113538 * visibleSize.height;
     
     this->setContentSize(Size(width, height));
+}
+
+bool Player::isSelected()
+{
+    return selected;
+}
+
+void Player::selectPlayer()
+{
+    selected = true;
+    this->selectionDot->setVisible(true);
+}
+
+void Player::resetSelection()
+{
+    selected = false;
+    this->selectionDot->setVisible(false);
 }

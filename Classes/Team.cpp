@@ -11,6 +11,8 @@
 
 Team::Team(int teamId)
 {
+    this->init();
+    
     _teamId = teamId;
     
     _playersNumber = 5;
@@ -20,6 +22,8 @@ Team::Team(int teamId)
 
 Team::Team(int teamId, int playersNumber)
 {
+    this->init();
+    
     _teamId = teamId;
     
     _playersNumber = playersNumber;

@@ -17,13 +17,18 @@ public:
     Player(int team, int gamePosition);
     int getTeam();
     void setTeam(int team);
-    
+    bool isSelected();
+    void selectPlayer();
+    void resetSelection();
     
 private:
     int _team;
     int _gamePosition;
     void setInitialPosition(Vec2 origin, Size visibleSize);
     void setInitialSize();
+    EventListenerTouchOneByOne *listener;
+    DrawNode *selectionDot;
+    bool selected;
 };
 
 #endif /* Player_h */

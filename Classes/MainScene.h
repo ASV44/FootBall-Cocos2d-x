@@ -19,6 +19,7 @@ public:
 private:
     Team *redTeam;
     Team *blueTeam;
+    Sprite *ball;
 };
 
 #endif // __HELLOWORLD_SCENE_H__

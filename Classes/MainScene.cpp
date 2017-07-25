@@ -33,6 +33,13 @@ bool MainScene::init()
     blueTeam = new Team(Team::BLUE_TEAM);
     this->addChild(redTeam);
     this->addChild(blueTeam);
+    
+    ball = Sprite::create("ball.png");
+    ball->setPosition(Vec2(origin.x + visibleSize.width / 2,
+                           origin.y + visibleSize.height / 2));
+    ball->setScale(0.7);
+    //CCLOG("Ball width:%f height:%f",ball->getContentSize().width, ball->getContentSize().height);
+    this->addChild(ball);
 //    CCLOG("Origin x:%f y:%f",origin.x,origin.y);
 //    CCLOG("Visible Size x:%f y:%f", visibleSize.width, visibleSize.height);
 //    CCLOG("Player x:%f y:%f",player->getPosition().x,player->getPosition().y);

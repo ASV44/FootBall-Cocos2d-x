@@ -17,6 +17,7 @@ public:
     Team(int teamId);
     Team(int teamId, int playersNumber);
     enum teams { RED_TEAM, BLUE_TEAM };
+    void resetSelection();
     
 private:
     int _teamId;
