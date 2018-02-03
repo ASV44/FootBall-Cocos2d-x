@@ -64,6 +64,11 @@ Player::Player(int team, int gamePosition)
         return false;
     };
     
+    listener->onTouchMoved = [&](Touch* touch, Event* event){
+        
+        return true;
+    };
+    
     _eventDispatcher->addEventListenerWithSceneGraphPriority(listener, this);
     
 //    this->setAnchorPoint(Vec2(0,0));

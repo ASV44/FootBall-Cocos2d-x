@@ -67,14 +67,21 @@
 		D44C620C132DFF330009C878 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D44C620B132DFF330009C878 /* OpenAL.framework */; };
 		D44C620E132DFF430009C878 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D44C620D132DFF430009C878 /* AVFoundation.framework */; };
 		D44C6210132DFF4E0009C878 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D44C620F132DFF4E0009C878 /* AudioToolbox.framework */; };
-		D60B806B1F21DDF9004E65E5 /* ball.png in Resources */ = {isa = PBXBuildFile; fileRef = D60B80661F21DDF9004E65E5 /* ball.png */; };
-		D60B80761F21E254004E65E5 /* referee.png in Resources */ = {isa = PBXBuildFile; fileRef = D60B80721F21E254004E65E5 /* referee.png */; };
-		D60B80771F21E254004E65E5 /* bluePlayer.png in Resources */ = {isa = PBXBuildFile; fileRef = D60B80731F21E254004E65E5 /* bluePlayer.png */; };
-		D60B80781F21E254004E65E5 /* redPlayer.png in Resources */ = {isa = PBXBuildFile; fileRef = D60B80741F21E254004E65E5 /* redPlayer.png */; };
-		D60B80791F21E254004E65E5 /* field.png in Resources */ = {isa = PBXBuildFile; fileRef = D60B80751F21E254004E65E5 /* field.png */; };
+		D629E87A2025EF6000FFB476 /* Team.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D629E8792025EF6000FFB476 /* Team.cpp */; };
+		D629E87B2025EF6000FFB476 /* Team.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D629E8792025EF6000FFB476 /* Team.cpp */; };
+		D629E8822025EFCD00FFB476 /* Player.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D629E8812025EFCD00FFB476 /* Player.cpp */; };
+		D629E8832025EFCD00FFB476 /* Player.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D629E8812025EFCD00FFB476 /* Player.cpp */; };
+		D629E8892025F10E00FFB476 /* bluePlayer.png in Resources */ = {isa = PBXBuildFile; fileRef = D629E8842025F10E00FFB476 /* bluePlayer.png */; };
+		D629E88A2025F10E00FFB476 /* bluePlayer.png in Resources */ = {isa = PBXBuildFile; fileRef = D629E8842025F10E00FFB476 /* bluePlayer.png */; };
+		D629E88B2025F10E00FFB476 /* ball.png in Resources */ = {isa = PBXBuildFile; fileRef = D629E8852025F10E00FFB476 /* ball.png */; };
+		D629E88C2025F10E00FFB476 /* ball.png in Resources */ = {isa = PBXBuildFile; fileRef = D629E8852025F10E00FFB476 /* ball.png */; };
+		D629E88D2025F10E00FFB476 /* redPlayer.png in Resources */ = {isa = PBXBuildFile; fileRef = D629E8862025F10E00FFB476 /* redPlayer.png */; };
+		D629E88E2025F10E00FFB476 /* redPlayer.png in Resources */ = {isa = PBXBuildFile; fileRef = D629E8862025F10E00FFB476 /* redPlayer.png */; };
+		D629E88F2025F10E00FFB476 /* field.png in Resources */ = {isa = PBXBuildFile; fileRef = D629E8872025F10E00FFB476 /* field.png */; };
+		D629E8902025F10E00FFB476 /* field.png in Resources */ = {isa = PBXBuildFile; fileRef = D629E8872025F10E00FFB476 /* field.png */; };
+		D629E8912025F10E00FFB476 /* referee.png in Resources */ = {isa = PBXBuildFile; fileRef = D629E8882025F10E00FFB476 /* referee.png */; };
+		D629E8922025F10E00FFB476 /* referee.png in Resources */ = {isa = PBXBuildFile; fileRef = D629E8882025F10E00FFB476 /* referee.png */; };
 		D6B0611B1803AB670077942B /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6B0611A1803AB670077942B /* CoreMotion.framework */; };
-		D6D9DA281F21F8AD00A73277 /* Player.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D6D9DA261F21F8AD00A73277 /* Player.cpp */; };
-		D6D9DA2B1F21F8E300A73277 /* Team.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D6D9DA2A1F21F8E300A73277 /* Team.cpp */; };
 		ED545A7C1B68A1F400C3958E /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = ED545A7B1B68A1F400C3958E /* libiconv.dylib */; };
 		ED545A7E1B68A1FA00C3958E /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = ED545A7D1B68A1FA00C3958E /* libiconv.dylib */; };
 /* End PBXBuildFile section */
@@ -176,16 +183,16 @@
 		D44C620B132DFF330009C878 /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
 		D44C620D132DFF430009C878 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		D44C620F132DFF4E0009C878 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
-		D60B80661F21DDF9004E65E5 /* ball.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ball.png; sourceTree = "<group>"; };
-		D60B80721F21E254004E65E5 /* referee.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = referee.png; sourceTree = "<group>"; };
-		D60B80731F21E254004E65E5 /* bluePlayer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bluePlayer.png; sourceTree = "<group>"; };
-		D60B80741F21E254004E65E5 /* redPlayer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = redPlayer.png; sourceTree = "<group>"; };
-		D60B80751F21E254004E65E5 /* field.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = field.png; sourceTree = "<group>"; };
+		D629E8782025EF6000FFB476 /* Team.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Team.h; sourceTree = "<group>"; };
+		D629E8792025EF6000FFB476 /* Team.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Team.cpp; sourceTree = "<group>"; };
+		D629E8802025EFCD00FFB476 /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
+		D629E8812025EFCD00FFB476 /* Player.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Player.cpp; sourceTree = "<group>"; };
+		D629E8842025F10E00FFB476 /* bluePlayer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bluePlayer.png; sourceTree = "<group>"; };
+		D629E8852025F10E00FFB476 /* ball.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ball.png; sourceTree = "<group>"; };
+		D629E8862025F10E00FFB476 /* redPlayer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = redPlayer.png; sourceTree = "<group>"; };
+		D629E8872025F10E00FFB476 /* field.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = field.png; sourceTree = "<group>"; };
+		D629E8882025F10E00FFB476 /* referee.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = referee.png; sourceTree = "<group>"; };
 		D6B0611A1803AB670077942B /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/CoreMotion.framework; sourceTree = DEVELOPER_DIR; };
-		D6D9DA241F21F89C00A73277 /* Player.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
-		D6D9DA261F21F8AD00A73277 /* Player.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Player.cpp; sourceTree = "<group>"; };
-		D6D9DA291F21F8CC00A73277 /* Team.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Team.h; sourceTree = "<group>"; };
-		D6D9DA2A1F21F8E300A73277 /* Team.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Team.cpp; sourceTree = "<group>"; };
 		ED545A7B1B68A1F400C3958E /* libiconv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.dylib; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.4.sdk/usr/lib/libiconv.dylib; sourceTree = DEVELOPER_DIR; };
 		ED545A7D1B68A1FA00C3958E /* libiconv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.dylib; path = usr/lib/libiconv.dylib; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -317,11 +324,11 @@
 				46880B7619C43A67006E1F66 /* CloseNormal.png */,
 				46880B7719C43A67006E1F66 /* CloseSelected.png */,
 				46880B7A19C43A67006E1F66 /* HelloWorld.png */,
-				D60B80661F21DDF9004E65E5 /* ball.png */,
-				D60B80721F21E254004E65E5 /* referee.png */,
-				D60B80731F21E254004E65E5 /* bluePlayer.png */,
-				D60B80741F21E254004E65E5 /* redPlayer.png */,
-				D60B80751F21E254004E65E5 /* field.png */,
+				D629E8852025F10E00FFB476 /* ball.png */,
+				D629E8842025F10E00FFB476 /* bluePlayer.png */,
+				D629E8872025F10E00FFB476 /* field.png */,
+				D629E8862025F10E00FFB476 /* redPlayer.png */,
+				D629E8882025F10E00FFB476 /* referee.png */,
 			);
 			name = Resources;
 			path = ../Resources;
@@ -334,10 +341,10 @@
 				46880B8519C43A87006E1F66 /* AppDelegate.h */,
 				46880B8719C43A87006E1F66 /* MainScene.h */,
 				46880B8619C43A87006E1F66 /* MainScene.cpp */,
-				D6D9DA261F21F8AD00A73277 /* Player.cpp */,
-				D6D9DA241F21F89C00A73277 /* Player.h */,
-				D6D9DA2A1F21F8E300A73277 /* Team.cpp */,
-				D6D9DA291F21F8CC00A73277 /* Team.h */,
+				D629E8812025EFCD00FFB476 /* Player.cpp */,
+				D629E8802025EFCD00FFB476 /* Player.h */,
+				D629E8792025EF6000FFB476 /* Team.cpp */,
+				D629E8782025EF6000FFB476 /* Team.h */,
 			);
 			name = Classes;
 			path = ../Classes;
@@ -493,15 +500,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				5087E78117EB970100C73F5D /* Icon-120.png in Resources */,
-				D60B806B1F21DDF9004E65E5 /* ball.png in Resources */,
+				D629E88B2025F10E00FFB476 /* ball.png in Resources */,
 				5087E78617EB970100C73F5D /* Icon-76.png in Resources */,
 				5087E77F17EB970100C73F5D /* Default@2x.png in Resources */,
-				D60B80771F21E254004E65E5 /* bluePlayer.png in Resources */,
 				50EF629917ECD46A001EB2F8 /* Icon-100.png in Resources */,
 				5087E78317EB970100C73F5D /* Icon-152.png in Resources */,
 				46880B8119C43A67006E1F66 /* HelloWorld.png in Resources */,
 				46880B7D19C43A67006E1F66 /* CloseSelected.png in Resources */,
-				D60B80781F21E254004E65E5 /* redPlayer.png in Resources */,
+				D629E8912025F10E00FFB476 /* referee.png in Resources */,
 				5087E77D17EB970100C73F5D /* Default-568h@2x.png in Resources */,
 				5087E78517EB970100C73F5D /* Icon-72.png in Resources */,
 				521A8E6519F0C34300D177D7 /* Default-736h@3x.png in Resources */,
@@ -512,13 +518,14 @@
 				50EF629617ECD46A001EB2F8 /* Icon-40.png in Resources */,
 				5087E78217EB970100C73F5D /* Icon-144.png in Resources */,
 				3EACC98F19EE6D4300EB3C5E /* res in Resources */,
-				D60B80791F21E254004E65E5 /* field.png in Resources */,
+				D629E88D2025F10E00FFB476 /* redPlayer.png in Resources */,
 				50EF629817ECD46A001EB2F8 /* Icon-80.png in Resources */,
-				D60B80761F21E254004E65E5 /* referee.png in Resources */,
 				5087E78417EB970100C73F5D /* Icon-57.png in Resources */,
+				D629E88F2025F10E00FFB476 /* field.png in Resources */,
 				5087E77E17EB970100C73F5D /* Default.png in Resources */,
 				521A8E6419F0C34300D177D7 /* Default-667h@2x.png in Resources */,
 				46880B7B19C43A67006E1F66 /* CloseNormal.png in Resources */,
+				D629E8892025F10E00FFB476 /* bluePlayer.png in Resources */,
 				50EF629717ECD46A001EB2F8 /* Icon-58.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -527,11 +534,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D629E88E2025F10E00FFB476 /* redPlayer.png in Resources */,
+				D629E88A2025F10E00FFB476 /* bluePlayer.png in Resources */,
 				46880B8219C43A67006E1F66 /* HelloWorld.png in Resources */,
+				D629E8922025F10E00FFB476 /* referee.png in Resources */,
 				503AE0F817EB97AB00D1A890 /* Icon.icns in Resources */,
 				3EACC99019EE6D4300EB3C5E /* res in Resources */,
 				521A8EAA19F11F5000D177D7 /* fonts in Resources */,
+				D629E8902025F10E00FFB476 /* field.png in Resources */,
 				46880B7C19C43A67006E1F66 /* CloseNormal.png in Resources */,
+				D629E88C2025F10E00FFB476 /* ball.png in Resources */,
 				46880B7E19C43A67006E1F66 /* CloseSelected.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -544,12 +556,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				46880B8819C43A87006E1F66 /* AppDelegate.cpp in Sources */,
+				D629E8822025EFCD00FFB476 /* Player.cpp in Sources */,
 				46880B8A19C43A87006E1F66 /* MainScene.cpp in Sources */,
-				D6D9DA281F21F8AD00A73277 /* Player.cpp in Sources */,
 				503AE10017EB989F00D1A890 /* AppController.mm in Sources */,
 				503AE10217EB989F00D1A890 /* RootViewController.mm in Sources */,
 				503AE10117EB989F00D1A890 /* main.m in Sources */,
-				D6D9DA2B1F21F8E300A73277 /* Team.cpp in Sources */,
+				D629E87A2025EF6000FFB476 /* Team.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -557,9 +569,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D629E87B2025EF6000FFB476 /* Team.cpp in Sources */,
 				46880B8919C43A87006E1F66 /* AppDelegate.cpp in Sources */,
 				503AE10517EB98FF00D1A890 /* main.cpp in Sources */,
 				46880B8B19C43A87006E1F66 /* MainScene.cpp in Sources */,
+				D629E8832025EFCD00FFB476 /* Player.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
